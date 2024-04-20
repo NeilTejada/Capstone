@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./navbar.css";
 
@@ -12,7 +12,11 @@ function Navbar() {
   const handleLogout = () => {
     localStorage.removeItem("token");
     toast.success("You have successfully logged out!");
-    navigate("/login");
+    console.log("You have logged out.");
+
+    setTimeout(() => {
+      navigate("/login");
+    }, 1000);
   };
 
   const isLoggedIn = localStorage.getItem("token");
@@ -36,9 +40,9 @@ function Navbar() {
         </Link>
 
         {isLoggedIn ? (
-          <button className="nav-link-active" onClick={handleLogout}>
+          <Link className="nav-link-active" to="/login" onClick={handleLogout}>
             Logout
-          </button>
+          </Link>
         ) : (
           <Link className="nav-link-active" to="/login">
             Login / Register
@@ -55,6 +59,7 @@ function Navbar() {
             Search
           </button>
         </form>
+        <ToastContainer />
       </div>
     </div>
   );

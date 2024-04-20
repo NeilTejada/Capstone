@@ -36,6 +36,7 @@
 .recipeDetail .ingridients {
   list-style: none;
   text-align: center;
+  margin-top: 10px;
 }
 
 .recipeDetail .instructions {
@@ -43,17 +44,32 @@
   padding-right: 5%;
 }
 
-.like-icon {
-  cursor: pointer; /* Make the heart icon clickable */
+.like-icon,
+.save-recipe {
+  cursor: pointer;
 }
 
 .like-icon i {
-  color: lightgray; /* Default color */
-  font-size: 1.5em; /* Adjust size as needed */
+  color: lightgray;
+  font-size: 3em;
+}
+
+.like-icon:hover + .save-recipe,
+.save-recipe:hover + .like-icon {
+  color: red;
+}
+
+.like-icon:hover,
+.save-recipe:hover {
+  color: red;
 }
 
 .like-icon:hover i {
-  color: red; /* Change the heart icon color to red on hover */
+  color: red;
+}
+
+.save-recipe {
+  font-size: 1.5em;
 }
 
 /* Media query*/

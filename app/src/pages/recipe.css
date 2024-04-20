@@ -1,5 +1,5 @@
 .recipe {
-  background-color:black;
+  background-color: black;
   width: 100%;
 }
 
@@ -27,6 +27,7 @@
 
 .go-to-recipe {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .page {
@@ -40,7 +41,7 @@
 }
 
 .filters-container {
-    flex: 0 0 auto; /* Makes the filters container not grow or shrink */
+  flex: 0 0 auto; /* Makes the filters container not grow or shrink */
   margin-right: 30px; /* Adds some space between filters and recipe list */
 }
 
@@ -69,5 +70,4 @@ fieldset legend {
   position: absolute;
   right: 100px;
   top: 10px;
-  
 }

@@ -40,7 +40,7 @@ function Login() {
       let token = response.token;
       localStorage.setItem("token", token);
 
-      setTimeout(() => navigate("/home"), 2000); //clock//wait
+      setTimeout(() => navigate("/home"), 1000); //clock//wait
     }
   };
 

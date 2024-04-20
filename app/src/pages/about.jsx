@@ -29,7 +29,9 @@ function About() {
               bulk of the card's content.
             </Card.Text>
             <Button variant="secondary">
-              <a href="https://github.com/NeilTejada">Go To GitHub</a>
+              <a href="https://github.com/NeilTejada">GitHub</a>
+              <br />
+              <a href="https://www.linkedin.com/in/neiltejada/">LinkedIn</a>
             </Button>
           </Card.Body>
         </Card>

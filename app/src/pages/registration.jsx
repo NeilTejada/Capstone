@@ -51,7 +51,7 @@ function Registration() {
       console.log("Register", response);
 
       toast.success("Your account has been created! Please Login to continue.");
-      setTimeout(() => navigate("/login"), 3000);
+      setTimeout(() => navigate("/login"), 1000);
     }
   };
 

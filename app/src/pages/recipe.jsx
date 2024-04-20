@@ -74,140 +74,141 @@ function Recipe() {
   }
 
   return (
-    
-      <div className="recipe-page page">
-      {filterVisible ?
-      ( <div className="filter-section">
-        <h2>Filters</h2>
-        <div className="filter-buttons">
-          <fieldset>
-            <legend>Cooking Style</legend>
-            <label>
-              <input
-                type="radio"
-                name="cooking_style"
-                value="1"
-                checked={filters.cooking_style === "1"}
-                onChange={handleFilterChange}
-              />
-              Grilled
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="cooking_style"
-                value="2"
-                checked={filters.cooking_style === "2"}
-                onChange={handleFilterChange}
-              />
-              Smoked
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Skill Level</legend>
-            <label>
-              <input
-                type="radio"
-                name="skill_level"
-                value="1"
-                checked={filters.skill_level == "1"}
-                onChange={handleFilterChange}
-              />
-              Beginner
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="skill_level"
-                value="2"
-                checked={filters.skill_level == "2"}
-                onChange={handleFilterChange}
-              />
-              Intermediate
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="skill_level"
-                value="3"
-                checked={filters.skill_level == "3"}
-                onChange={handleFilterChange}
-              />
-              Expert
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Food Type</legend>
-            <label>
-              <input
-                type="radio"
-                name="food_type"
-                value="1"
-                checked={filters.food_type === "1"}
-                onChange={handleFilterChange}
-              />
-              Seafood
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="food_type"
-                value="2"
-                checked={filters.food_type === "2"}
-                onChange={handleFilterChange}
-              />
-              Pork
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="food_type"
-                value="3"
-                checked={filters.food_type === "3"}
-                onChange={handleFilterChange}
-              />
-              Beef
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="food_type"
-                value="4"
-                checked={filters.food_type === "4"}
-                onChange={handleFilterChange}
-              />
-              Poultry
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="food_type"
-                value="5"
-                checked={filters.food_type === "5"}
-                onChange={handleFilterChange}
-              />
-              Pizza
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="food_type"
-                value="6"
-                checked={filters.food_type === "6"}
-                onChange={handleFilterChange}
-              />
-              Beef Pork
-            </label>
-          </fieldset>
-          <button className="btn btn-secondary" onClick={clearFilters}>
-            Clear Filters
-          </button>
+    <div className="recipe-page page">
+      {filterVisible ? (
+        <div className="filter-section">
+          <h2>Filters</h2>
+          <div className="filter-buttons">
+            <fieldset>
+              <legend>Cooking Style</legend>
+              <label>
+                <input
+                  type="radio"
+                  name="cooking_style"
+                  value="1"
+                  checked={filters.cooking_style === "1"}
+                  onChange={handleFilterChange}
+                />
+                Grilled
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="cooking_style"
+                  value="2"
+                  checked={filters.cooking_style === "2"}
+                  onChange={handleFilterChange}
+                />
+                Smoked
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Skill Level</legend>
+              <label>
+                <input
+                  type="radio"
+                  name="skill_level"
+                  value="1"
+                  checked={filters.skill_level == "1"}
+                  onChange={handleFilterChange}
+                />
+                Beginner
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="skill_level"
+                  value="2"
+                  checked={filters.skill_level == "2"}
+                  onChange={handleFilterChange}
+                />
+                Intermediate
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="skill_level"
+                  value="3"
+                  checked={filters.skill_level == "3"}
+                  onChange={handleFilterChange}
+                />
+                Expert
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Food Type</legend>
+              <label>
+                <input
+                  type="radio"
+                  name="food_type"
+                  value="1"
+                  checked={filters.food_type === "1"}
+                  onChange={handleFilterChange}
+                />
+                Seafood
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="food_type"
+                  value="2"
+                  checked={filters.food_type === "2"}
+                  onChange={handleFilterChange}
+                />
+                Pork
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="food_type"
+                  value="3"
+                  checked={filters.food_type === "3"}
+                  onChange={handleFilterChange}
+                />
+                Beef
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="food_type"
+                  value="4"
+                  checked={filters.food_type === "4"}
+                  onChange={handleFilterChange}
+                />
+                Poultry
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="food_type"
+                  value="5"
+                  checked={filters.food_type === "5"}
+                  onChange={handleFilterChange}
+                />
+                Pizza
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="food_type"
+                  value="6"
+                  checked={filters.food_type === "6"}
+                  onChange={handleFilterChange}
+                />
+                Beef Pork
+              </label>
+            </fieldset>
+            <button className="btn btn-secondary" onClick={clearFilters}>
+              Clear Filters
+            </button>
+          </div>
         </div>
-
-      </div> ) : null }
+      ) : null}
       <div className="recipe-list">
-        <h1>Recipes</h1> 
-        <button onClick={showHide} className="filter-btn">Show/hide filters</button>
+        <h1>Recipes</h1>
+        <button onClick={showHide} className="go-to-recipe btn btn-secondary">
+          Show/Hide filters
+        </button>
         <div className="post-list">
           {getFilteredPosts().map((post) => (
             <div className="card" style={{ width: "18rem" }} key={post.id}>
