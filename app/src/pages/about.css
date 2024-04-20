@@ -15,8 +15,9 @@
 }
 .about .card img {
   height: 300px;
-  border-radius: 1rem;
-  border-color: black;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 .card-body {
   background-color: black;
@@ -35,14 +36,11 @@ button a {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .about .cards {
-    /* Stack cards vertically */
     flex-direction: column;
-    gap: 20px; /* Set a smaller gap between cards */
-    height: auto; /* Allow cards to adjust height */
+    gap: 20px;
+    height: auto;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Add padding around the container */
+    padding: 10px;
   }
-
-  /* Adjust other styles as needed for smaller screens */
 }

@@ -41,16 +41,12 @@
 }
 
 .filters-container {
-  flex: 0 0 auto; /* Makes the filters container not grow or shrink */
-  margin-right: 30px; /* Adds some space between filters and recipe list */
-}
-
-.filter-buttons {
-  /* Your existing styles for filter buttons */
+  flex: 0 0 auto;
+  margin-right: 30px;
 }
 
 .recipe-list {
-  flex: 1; /* Takes up remaining space */
+  flex: 1;
   position: relative;
 }
 

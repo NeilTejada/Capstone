@@ -1,15 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./home.css";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 function Home() {
-  const navigate = useNavigate();
-
-  function sendToRecipe() {
-    navigate("/recipe");
-    console.log("Sending to Recipe page");
-  }
-
   return (
     <div className="container-home">
       <div className="home-page">
@@ -18,11 +10,13 @@ function Home() {
           <div className="home-bbq">
             <img className="img-main" src="./images/smokerHome.png" alt="" />
             <p className="home-text">
-              This website was designed to allow cooking enthusiasts to search,
-              upload, and save recipes. You can post pictures of recipes you've
-              created and comment on those recipes. Share your own recipes,
-              cooking styles, and show the world how you excel in the kitchen,
-              on the grill, with a smoker, or even on the open flame.
+              Discover a world of delicious grilling and smoking recipes with
+              our application! Browse through a curated selection of recipes to
+              find your next culinary adventure. Narrow down your choices with
+              our easy-to-use filtering options to find the perfect recipe for
+              your taste. Create an account to save your favorite recipes and
+              access them whenever you want. Get ready to ignite your passion
+              for grilling and smoking!"
             </p>
           </div>
           <div>
@@ -34,11 +28,13 @@ function Home() {
                   src="./images\pulledPork.png"
                 />
                 <Card.Body>
-                  <Card.Title className="text">Beginner's Pulled Pork</Card.Title>
+                  <Card.Title className="text">
+                    Beginner's Pulled Pork
+                  </Card.Title>
                   <Card.Text className="text">
-                  <p>Method: Smoked</p>
+                    <p>Method: Smoked</p>
                     <p>FoodType: Pork</p>
-                    <p>Level: Beginner</p> 
+                    <p>Level: Beginner</p>
                   </Card.Text>
                   <Link className="btn btn-secondary" to="/recipeDetail/2">
                     See Details
@@ -47,13 +43,17 @@ function Home() {
               </Card>
 
               <Card style={{ width: "20rem" }}>
-                <Card.Img className="img" variant="top" src="./images\honeyWings.png" />
+                <Card.Img
+                  className="img"
+                  variant="top"
+                  src="./images\honeyWings.png"
+                />
                 <Card.Body>
                   <Card.Title className="text">Honey Chipotle Wings</Card.Title>
                   <Card.Text className="text">
-                  <p>Method: Grilled</p>
+                    <p>Method: Grilled</p>
                     <p>FoodType: Poultry</p>
-                    <p>Level: Beginner</p> 
+                    <p>Level: Beginner</p>
                   </Card.Text>
                   <Link className="btn btn-secondary" to="/recipeDetail/11">
                     See Details
@@ -62,7 +62,11 @@ function Home() {
               </Card>
 
               <Card style={{ width: "20rem" }}>
-                <Card.Img className="img" variant="top" src="./images\baconShrimp.png" />
+                <Card.Img
+                  className="img"
+                  variant="top"
+                  src="./images\baconShrimp.png"
+                />
                 <Card.Body>
                   <Card.Title className="text">
                     Bacon Wrapped Shrimp with Jalapeno Coleslaw
@@ -70,8 +74,8 @@ function Home() {
                   <Card.Text className="text">
                     <p>Method: Grilled</p>
                     <p>FoodType: Seafood</p>
-                    <p>Level: Intermediate</p>                 
-                     </Card.Text>
+                    <p>Level: Intermediate</p>
+                  </Card.Text>
                   <Link className="btn btn-secondary" to="/recipeDetail/14">
                     See Details
                   </Link>
@@ -81,7 +85,6 @@ function Home() {
           </div>
           <div className="recipe-text">
             <p>Recipes of the Week</p>
-            
           </div>
         </section>
       </div>

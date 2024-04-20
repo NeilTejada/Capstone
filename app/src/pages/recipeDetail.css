@@ -2,6 +2,11 @@
   background-color: black;
   color: lightgray;
 }
+.recipeDetail .ingridients {
+  list-style: none;
+  text-align: center;
+  margin-top: 10px;
+}
 .recipeDetail .left-heading h2 {
   margin-top: 50px;
 }
@@ -17,29 +22,41 @@
 .recipeDetail .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: flex-start;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "left-heading left-heading"
+    "like-save image"
+    "ingredients instructions";
+  gap: 20px;
 }
 
-.recipeDetail .left-heading .details {
+.recipeDetail .left-heading {
+  grid-area: left-heading;
+}
+
+.like-icon,
+.save-recipe {
+  grid-area: like-save;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration: underline;
 }
 
 .recipeDetail .grid img {
-  width: 50%;
-  margin: auto;
+  grid-area: image;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.recipeDetail .ingridients {
+.recipeDetail .ingredients {
+  grid-area: ingredients;
   list-style: none;
   text-align: center;
   margin-top: 10px;
 }
 
 .recipeDetail .instructions {
+  grid-area: instructions;
   text-align: left;
   padding-right: 5%;
 }
@@ -51,7 +68,7 @@
 
 .like-icon i {
   color: lightgray;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .like-icon:hover + .save-recipe,

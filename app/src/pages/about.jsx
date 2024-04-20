@@ -12,8 +12,7 @@ function About() {
           <Card.Body>
             <Card.Title className="card">Eric Wells</Card.Title>
             <Card.Text className="card">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Check out my GitHub and LinkedIn!
             </Card.Text>
             <Button variant="secondary">
               <a href="https://github.com/dewdaddy35">Go To GitHub</a>
@@ -21,12 +20,11 @@ function About() {
           </Card.Body>
         </Card>
         <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
+          <Card.Img variant="top" src="./images/neil.jpg" />
           <Card.Body>
             <Card.Title className="card">Neil Tejada</Card.Title>
             <Card.Text className="card">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Check out my GitHub and LinkedIn!
             </Card.Text>
             <Button variant="secondary">
               <a href="https://github.com/NeilTejada">GitHub</a>

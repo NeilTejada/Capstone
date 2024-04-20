@@ -36,8 +36,8 @@
 
 .home-text {
   position: absolute;
-  top: 15%;
-  right: 10px;
+  top: 30%;
+  right: 50px;
   color: whitesmoke;
   width: 35%;
   font-size: 20pt;
@@ -121,5 +121,66 @@
   .recipe-image .col-md-6 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page h1 {
+    font-size: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-text {
+    width: 100%;
+    right: 0;
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .recipe-text button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .recipe-image .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .home-page h1 {
+    font-size: 3rem;
+  }
+
+  .home-text {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .recipe-text button {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
